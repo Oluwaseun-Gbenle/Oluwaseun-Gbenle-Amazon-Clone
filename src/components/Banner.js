@@ -14,7 +14,7 @@ showThumbs={false}
 interval={5000}>
 
 <div>
-<img loading="lazy" src="https://i.ibb.co/1Z77sgG/711-Y9-Al9-RNL-SX3000-22.jpg" alt="" />
+<img loading="lazy" src="https://i.ibb.co/6FGFCcL/711-Y9-Al9-RNL-SX3000-22.jpg" alt="" />
 </div>
 <img loading="lazy" src="https://links.papareact.com/6ff" alt="" />
 <div>
