@@ -6,10 +6,12 @@ import { useSelector } from "react-redux";
 import ProductCheckout from "../components/ProductCheckout";
 import Currency from "react-currency-formatter";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 
 function Checkout() {
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
+  const router = useRouter();
   const { data: session } = useSession();
   return (
     <div className="bg-gray-100">
@@ -57,7 +59,7 @@ function Checkout() {
                 <Currency quantity={total} currency="NGN" />
                 </span>
                 </h2>
-                <button disabled={!session} className= {!session ? 'p-2 text-xs md:text-sm bg-gradient-to-b rounded-sm from-gray-300 to bg-gray-500 border-gray-200 text-gray-300 cursor-not-allowed' : 'button mt-2'}>
+                <button disabled={!session} onClick={session ? () => router.push("/") : ""} className= {!session ? 'p-2 text-xs md:text-sm bg-gradient-to-b rounded-sm from-gray-300 to bg-gray-500 border-gray-200 text-gray-300 cursor-not-allowed' : 'button mt-2'}>
                     {!session ? "Sign in to checkout" : "Proceed to checkout"}</button>
                 </div>
             )}
