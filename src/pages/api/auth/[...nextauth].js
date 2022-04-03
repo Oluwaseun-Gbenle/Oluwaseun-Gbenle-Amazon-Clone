@@ -16,6 +16,6 @@ export default NextAuth({
       from: "<no-reply@example.com>",
     }),*/
     // Sign in with passwordless email link
-  ]
-  
+  ],
+  secret: process.env.NEXTAUTH_SECRET,
 })
