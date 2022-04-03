@@ -17,4 +17,5 @@ export default NextAuth({
     }),*/
     // Sign in with passwordless email link
   ]
+  
 })
