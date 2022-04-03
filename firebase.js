@@ -1,4 +1,4 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional changes
 const firebaseConfig = {
     apiKey: "AIzaSyAAroYlMyIUBOPtCWtCQ-9k2_HwlmgSuPk",
     authDomain: "clone-64056.firebaseapp.com",
